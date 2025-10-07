@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quiz-box</title>
 
-  <!-- шрифт как на макете -->
+  <!-- Open Sans как на макете -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -15,19 +15,21 @@
 </head>
 <body>
 
-  <!-- ШАПКА -->
+  <!-- ШАПКА (прозрачная) -->
   <header class="header">
     <div class="container header__row">
       <a href="#" class="header__logo">
         <img src="images/logo.png" alt="Quiz-box" class="logo">
       </a>
 
+      <!-- центрированное меню -->
       <nav class="nav">
         <a href="#">Главная</a>
         <a href="#games">Игры</a>
         <a href="#reviews">Отзывы</a>
       </nav>
 
+      <!-- номер текстом + отдельное изображение с расписанием -->
       <div class="header__phone">
         <div class="phone__number">8 800 700 30 30</div>
         <img src="images/phone.png" alt="график работы" class="phone__schedule">
@@ -35,9 +37,11 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (с плавным затуханием фона) -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__fade" aria-hidden="true"></div>
+
     <div class="container hero__content">
       <h1>Интеллектуальный<br> вечер для шумной<br> компании</h1>
       <p class="lead">Игры на любой вкус</p>
@@ -45,12 +49,12 @@
     </div>
   </section>
 
-  <!-- НОВИНКИ НЕДЕЛИ -->
+  <!-- НОВИНКИ НЕДЕЛИ (та же ширина, большая иконка NEW по центру строки) -->
   <section class="section" id="games">
     <div class="container">
       <h2 class="section__title">
         Новинки недели
-        <img class="badge-new" src="images/icons-new.png" alt="new">
+        <img class="badge-new" src="images/icons-new.png" alt="NEW">
       </h2>
 
       <div class="cards">
@@ -105,7 +109,7 @@
     </div>
   </section>
 
-  <!-- ПРОШЕДШИЕ ИГРЫ -->
+  <!-- ПРОШЕДШИЕ ИГРЫ (пагинация по центру + подпись) -->
   <section class="section section--pad-top">
     <div class="container">
       <h2 class="section__title">Прошедшие игры</h2>
@@ -131,6 +135,7 @@
       </div>
 
       <div class="pager">
+        <span class="pager__label">Страница 1 из 7</span>
         <span class="pager__dot is-active">1</span>
         <span class="pager__dot">2</span>
         <span class="pager__dot">3</span>
@@ -142,8 +147,10 @@
     </div>
   </section>
 
-  <!-- О НАС -->
-  <section class="section" id="about">
+  <!-- О НАС (+ фоновая подложка bg-bottom.png за секцией) -->
+  <section class="section about" id="about">
+    <div class="about__decor" aria-hidden="true"></div>
+
     <div class="container about__row">
       <div class="about__photo">
         <img src="images/image-about.png" alt="Команда за столом">
@@ -154,12 +161,12 @@
         <p class="about__txt">
           Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более-менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навыки публичных выступлений в домашних условиях.
         </p>
-        <a class="btn btn--white" href="#">подробнее</a>
+        <a class="btn btn--white-outline" href="#">подробнее</a>
       </div>
     </div>
   </section>
 
-  <!-- ПОДВАЛ -->
+  <!-- ПОДВАЛ (сплошной цвет, отдельные иконки, номер текстом) -->
   <footer class="footer">
     <div class="container footer__row">
       <a href="#"><img class="logo" src="images/logo.png" alt="Quiz-box"></a>
