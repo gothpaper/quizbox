@@ -66,7 +66,7 @@ h1{ font-size:56px; line-height:1.05; margin:28px 0 12px; font-weight:800; }
 .btn--ghost{ background:transparent; color:var(--accent); border:2px solid var(--accent); }
 .btn--white-outline{ background:transparent; color:#fff; border:2px solid #fff; }
 
-/* ===== секции ===== */
+/*секции*/
 .section{ padding:10px 0; }
 .section--pad-top{ padding-top:34px; }
 
@@ -76,7 +76,7 @@ h1{ font-size:56px; line-height:1.05; margin:28px 0 12px; font-weight:800; }
 }
 .badge-new{ height:36px; display:inline-block; vertical-align:middle; }
 
-/* ===== карточки ===== */
+/*карточки*/
 .cards{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
 @media (max-width:1000px){ .cards{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:640px){ .cards{ grid-template-columns:1fr; } }
@@ -98,7 +98,7 @@ h1{ font-size:56px; line-height:1.05; margin:28px 0 12px; font-weight:800; }
 .meta__item img{ width:18px; height:18px; opacity:.9 }
 .card__desc{ color:#3b3f48; font-size:14px; margin:0 0 14px; }
 
-/* ===== прош игры ===== */
+/* прош игры*/
 .past__grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
 @media (max-width:900px){ .past__grid{ grid-template-columns:1fr } }
 .past-card{ position:relative; border-radius:16px; overflow:hidden; box-shadow:var(--shadow); }
