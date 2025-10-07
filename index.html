@@ -1,1 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz-box</title>
+
+  <!-- прелоад крупных фоновых картинок (необязательно, но быстрее) -->
+  <link rel="preload" href="images/bg-banner.png" as="image">
+  <link rel="preload" href="images/bg-bottom.png" as="image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header container">
+    <div class="header__row">
+      <a href="#"><img class="logo" src="images/logo.png" alt="Quiz-box"></a>
+
+      <nav class="nav">
+        <a href="#">Главная</a>
+        <a href="#games">Игры</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+
+      <div class="phone">
+        <img src="images/phone.png" alt="Телефон и график">
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero + «Новинки недели» -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <h1>Интеллектуальный<br> вечер для шумной<br> компании</h1>
+      <p class="lead">Игры на любой вкус</p>
+      <a class="btn" href="#about">подробнее</a>
+
+      <div class="section" id="games">
+        <h2 class="section__title">
+          Новинки недели
+          <img class="badge-new" src="images/icons-new.png" alt="new">
+        </h2>
+
+        <div class="cards">
+
+          <!-- Карточка 1 -->
+          <article class="card">
+            <div class="card__cover">
+              <img src="images/1music.png" alt="Музыкальная игра">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Музыкальная игра</h3>
+              <div class="meta">
+                <div class="meta__item">
+                  <img src="images/icons-clock.png" alt="">90 минут
+                </div>
+                <div class="meta__item">
+                  <img src="images/icons-questions.png" alt="">70 вопросов
+                </div>
+              </div>
+              <p class="card__desc">
+                Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
+              </p>
+              <a href="#" class="card__btn">СМОТРЕТЬ</a>
+            </div>
+          </article>
+
+          <!-- Карточка 2 -->
+          <article class="card">
+            <div class="card__cover">
+              <img src="images/190s.png" alt="Назад в 90-е">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Назад в 90-е</h3>
+              <div class="meta">
+                <div class="meta__item">
+                  <img src="images/icons-clock.png" alt="">90 минут
+                </div>
+                <div class="meta__item">
+                  <img src="images/icons-questions.png" alt="">70 вопросов
+                </div>
+              </div>
+              <p class="card__desc">
+                Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
+              </p>
+              <a href="#" class="card__btn">СМОТРЕТЬ</a>
+            </div>
+          </article>
+
+          <!-- Карточка 3 -->
+          <article class="card">
+            <div class="card__cover">
+              <img src="images/1it.png" alt="IT-викторина">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">IT-викторина</h3>
+              <div class="meta">
+                <div class="meta__item">
+                  <img src="images/icons-clock.png" alt="">90 минут
+                </div>
+                <div class="meta__item">
+                  <img src="images/icons-questions.png" alt="">70 вопросов
+                </div>
+              </div>
+              <p class="card__desc">
+                Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.
+              </p>
+              <a href="#" class="card__btn">СМОТРЕТЬ</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Прошедшие игры -->
+  <section class="past container">
+    <h2 class="section__title">Прошедшие игры</h2>
+
+    <div class="past__grid">
+      <article class="past-card">
+        <img src="images/image-spring.png" alt="Новогодний квиз">
+        <div class="pc__content">
+          <div class="pc__date">1 января</div>
+          <div class="pc__title">Новогодний квиз</div>
+          <div class="pc__txt">Успевайте забронировать даты. Пока ещё есть места на декабрь. Удачи и всех благ!</div>
+        </div>
+      </article>
+
+      <article class="past-card">
+        <img src="images/image-christmas.png" alt="Весенняя игра">
+        <div class="pc__content">
+          <div class="pc__date">8 марта</div>
+          <div class="pc__title">Весенняя игра</div>
+          <div class="pc__txt">Успевайте забронировать даты! Пока ещё есть места на март. Удачи и всех благ!</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="pager">
+      <span>Страница 1 из 7</span>
+      <span class="pager__dot is-active">1</span>
+      <span class="pager__dot">2</span>
+      <span class="pager__dot">3</span>
+      <span class="pager__dot">4</span>
+      <span class="pager__dot">5</span>
+      <span class="pager__dot">6</span>
+      <span class="pager__dot">7</span>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section class="about" id="about">
+    <div class="container about__row">
+      <div class="about__photo">
+        <img src="images/image-about.png" alt="О нас">
+      </div>
+
+      <div class="about__panel">
+        <h3 class="about__title">О нас</h3>
+        <p class="about__txt">
+          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+          сгенерировать несколько абзацев более-менее осмысленного
+          текста рыбы на русском языке, а начинающему оратору
+          отточить навыки публичных выступлений в домашних условиях.
+        </p>
+        <a class="btn btn--ghost" href="#">подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer__bg" aria-hidden="true"></div>
+    <div class="container footer__row">
+      <a href="#"><img class="logo" src="images/logo.png" alt="Quiz-box"></a>
+
+      <nav class="foot-nav">
+        <a href="#">Главная</a>
+        <a href="#games">Игры</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+
+      <div class="social">
+        <img src="images/icons-vk.png" alt="VK">
+        <img src="images/icons-f.png" alt="Facebook">
+        <img src="images/icons-i.png" alt="Instagram">
+        <img src="images/icons-social.png" alt="Другое">
+      </div>
+
+      <div class="phone">
+        <img src="images/phone.png" alt="Телефон и график">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
 
