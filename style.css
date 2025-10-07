@@ -1,9 +1,9 @@
 :root{
-  --bg:#0f1115;        /* общий фон */
-  --panel:#151820;     /* тёмные блоки */
-  --card:#ffffff;      /* карточки */
-  --ink:#0f1115;       /* текст на светлом */
-  --accent:#7c3aed;    /* фиолетовый */
+  --bg:#0f1115;
+  --panel:#151820;
+  --card:#ffffff;
+  --ink:#0f1115;
+  --accent:#7c3aed;
   --radius:14px;
   --shadow:0 12px 36px rgba(0,0,0,.35);
 }
