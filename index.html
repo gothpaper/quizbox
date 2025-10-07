@@ -4,11 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quiz-box</title>
-<link rel="stylesheet" href="style.css>
+
+  <!-- прелоад крупных фоновых картинок (необязательно, но быстрее) -->
+  <link rel="preload" href="images/bg-banner.png" as="image">
+  <link rel="preload" href="images/bg-bottom.png" as="image">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-  
 <body>
-   <!-- шапочка -->
+
+  <!-- Шапка -->
   <header class="header container">
     <div class="header__row">
       <a href="#"><img class="logo" src="images/logo.png" alt="Quiz-box"></a>
@@ -25,14 +30,14 @@
     </div>
   </header>
 
-  <!-- новинки недели и герой -->
+  <!-- Hero + «Новинки недели» -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
 
     <div class="container hero__content">
       <h1>Интеллектуальный<br> вечер для шумной<br> компании</h1>
       <p class="lead">Игры на любой вкус</p>
-      <a class="btn" href="#about">Подробнее</a>
+      <a class="btn" href="#about">подробнее</a>
 
       <div class="section" id="games">
         <h2 class="section__title">
@@ -42,7 +47,7 @@
 
         <div class="cards">
 
-          <!-- карточкп1 -->
+          <!-- Карточка 1 -->
           <article class="card">
             <div class="card__cover">
               <img src="images/1music.png" alt="Музыкальная игра">
@@ -64,7 +69,7 @@
             </div>
           </article>
 
-          <!-- карточка2 -->
+          <!-- Карточка 2 -->
           <article class="card">
             <div class="card__cover">
               <img src="images/190s.png" alt="Назад в 90-е">
@@ -86,7 +91,7 @@
             </div>
           </article>
 
-          <!-- карта3 -->
+          <!-- Карточка 3 -->
           <article class="card">
             <div class="card__cover">
               <img src="images/1it.png" alt="IT-викторина">
@@ -113,7 +118,7 @@
     </div>
   </section>
 
-  <!-- прошедшик игры -->
+  <!-- Прошедшие игры -->
   <section class="past container">
     <h2 class="section__title">Прошедшие игры</h2>
 
@@ -149,7 +154,7 @@
     </div>
   </section>
 
-  <!-- онас -->
+  <!-- О нас -->
   <section class="about" id="about">
     <div class="container about__row">
       <div class="about__photo">
@@ -169,7 +174,7 @@
     </div>
   </section>
 
-  <!-- футер -->
+  <!-- Подвал -->
   <footer class="footer">
     <div class="footer__bg" aria-hidden="true"></div>
     <div class="container footer__row">
@@ -182,10 +187,10 @@
       </nav>
 
       <div class="social">
-        <img src="images/icons-t.png" alt="Telegram">
         <img src="images/icons-vk.png" alt="VK">
         <img src="images/icons-f.png" alt="Facebook">
         <img src="images/icons-i.png" alt="Instagram">
+        <img src="images/icons-social.png" alt="Другое">
       </div>
 
       <div class="phone">
@@ -196,4 +201,3 @@
 
 </body>
 </html>
-
