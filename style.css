@@ -39,7 +39,7 @@ img{display:block;max-width:100%}
   display:flex; align-items:flex-start; gap:12px; justify-self:end;
 }
 .phone__number{ font-weight:700; letter-spacing:.2px; white-space:nowrap }
-.phone__schedule{ height:60px }
+.phone__schedule{ height:90px }
 
 /* герой */
 .hero{ position:relative; padding:8px 0 56px; overflow:hidden; }
