@@ -42,12 +42,14 @@ img{display:block;max-width:100%}
 .phone__schedule{ height:90px }
 
 /* герой */
-.hero{ position:relative; padding:8px 0 56px; overflow:hidden; }
+.hero{ position:relative; padding:108px 0 56px; overflow:hidden; }
 .hero__bg{
   position:absolute; inset:0;
   background:url("images/bg-banner.png") center/cover no-repeat;
   filter:grayscale(100%); opacity:.35;
 }
+
+
 /* герой затухание */
 .hero__fade{
   content:""; position:absolute; inset:0; pointer-events:none;
