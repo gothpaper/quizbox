@@ -42,27 +42,12 @@ img{display:block;max-width:100%}
 .phone__schedule{ height:90px }
 
 /* герой */
-.hero{ position:relative; padding:108px 0 56px; overflow:hidden; }
+.hero{ position:relative; padding:8px 0 56px; overflow:hidden; }
 .hero__bg{
   position:absolute; inset:0;
   background:url("images/bg-banner.png") center/cover no-repeat;
   filter:grayscale(100%); opacity:.35;
 }
-.privet {
-  background-color: var(--accent); /* фон /*
-  color: white;              /* белый текст */
-  border: none;              /* без рамки */
-  padding: 12px 24px;        /* внутренние отступы */
-  font-size: 16px;           /* размер текста */
-  border-radius: 8px;        /* скруглённые углы */
-  cursor: pointer;           /* указатель при наведении */
-  transition: background-color 0.3s ease; /* плавная анимация */
-}
-
-.privet:hover {
-  background-color: #45a049; /* темнее при наведении */
-}
-
 
 /* герой затухание */
 .hero__fade{
